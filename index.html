@@ -1,130 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mikia Whitehead — Data Analyst · BI Developer · Analytics Engineer</title>
-<meta name="description" content="Mikia Whitehead — Data and analytics engineer specializing in Power BI, DAX, SQL, and semantic modeling.">
+<meta name="description" content="Portfolio of Mikia Whitehead — data and analytics engineer specializing in Power BI, DAX, SQL, and semantic modeling.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="blob blob-1" aria-hidden="true"></div>
+<div class="blob blob-2" aria-hidden="true"></div>
+<div class="blob blob-3" aria-hidden="true"></div>
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="logo">Mikia Whitehead</a>
+    <a href="#top" class="logo">M.</a>
     <nav class="nav">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#beyond">Beyond</a>
     </nav>
     <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+      </button>
+      <a href="resume.pdf" download="MikiaWhiteheadResume.pdf" class="btn btn-outline">Resume ↓</a>
       <a href="mailto:mikiawhitehead@gmail.com" class="btn btn-outline">Email</a>
       <a href="https://www.linkedin.com/in/mikiawhitehead/" target="_blank" rel="noopener" class="btn btn-solid">LinkedIn</a>
     </div>
   </div>
 </header>
 
+<!-- ===== HERO ===== -->
 <section id="top" class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Data Analyst · BI Developer · Analytics Engineer</div>
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <p class="hero-role">Data Analyst · BI Developer · Analytics Engineer</p>
     <h1>Mikia<br>Whitehead</h1>
-    <p class="hero-lead">I build the semantic models, pipelines, and dataset standards that reporting sits on, so the numbers hold up under scale, not just on the day they ship.</p>
+    <p class="hero-lead">I build the semantic models, pipelines, and dataset standards that reporting sits on — so the numbers hold up under scale, not just on the day they ship.</p>
     <div class="hero-cta">
-      <a href="#projects" class="btn btn-accent">View projects</a>
-      <a href="mailto:mikiawhitehead@gmail.com" class="btn btn-ghost">mikiawhitehead@gmail.com</a>
+      <a href="resume.pdf" download="MikiaWhiteheadResume.pdf" class="btn btn-accent">Download resume</a>
+      <a href="#projects" class="btn btn-ghost">View projects</a>
     </div>
-    <div class="stat-grid">
-      <div class="stat" data-count="90" data-suffix="%">
-        <div class="stat-num"><span class="count">0</span>%</div>
-        <div class="stat-label">faster dataset refresh across 4 business units</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">5h → 30m</div>
-        <div class="stat-label">dataset documentation, via an AI-assisted workflow</div>
-      </div>
-      <div class="stat" data-count="30" data-suffix="%">
-        <div class="stat-num"><span class="count">0</span>%</div>
-        <div class="stat-label">drop in pipeline integrity failures over two years</div>
-      </div>
-      <div class="stat" data-count="40" data-suffix="+">
-        <div class="stat-num"><span class="count">0</span>+</div>
-        <div class="stat-label">members across data architecture &amp; analysis convened</div>
-      </div>
-    </div>
+    <p class="currently">Currently: building enterprise dataset standards and AI-assisted documentation workflows at Tourmaline Oil</p>
   </div>
 </section>
 
-<section id="about" class="section reveal">
-  <div class="wrap two-col">
-    <div class="col-label">
-      <div class="section-tag">01 / About</div>
-      <div class="tag-line"></div>
+<!-- ===== STAT STRIP ===== -->
+<div class="stat-strip">
+  <div class="stat-strip-inner">
+    <div class="stat-item" data-count="90" data-suffix="%">
+      <span class="stat-num"><span class="count">0</span>%</span>
+      <span class="stat-label">faster dataset refresh across 4 business units</span>
     </div>
-    <div class="col-content">
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="stat-num">5h → 30m</span>
+      <span class="stat-label">dataset documentation via AI-assisted workflow</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item" data-count="30" data-suffix="%">
+      <span class="stat-num"><span class="count">0</span>%</span>
+      <span class="stat-label">drop in pipeline integrity failures over two years</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item" data-count="40" data-suffix="+">
+      <span class="stat-num"><span class="count">0</span>+</span>
+      <span class="stat-label">members across data architecture &amp; analysis convened</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ME ===== -->
+<section id="about" class="section">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <h2>About me</h2>
       <p class="lead-p">Data and analytics engineer with a technical foundation in SQL, DAX, and Power Query, focused on scalable dataset architecture and semantic modeling within Power BI and Microsoft Fabric.</p>
-      <p>I build reusable, production-grade data pipelines and BI solutions that prioritize long-term data integrity and performance over short-term fixes, and I spend as much time on the structures underneath a report — source rules, model design, ownership — as on the report itself.</p>
+      <p>I build reusable, production-grade data pipelines and BI solutions that prioritize long-term data integrity and performance over short-term fixes. I spend as much time on the structures underneath a report — source rules, model design, ownership — as on the report itself.</p>
       <p>My background is electrical and software engineering at UBC. I started in digital engineering at Veren, standardizing Power BI models and building data solutions in Microsoft Fabric, and now lead functional data governance and BI at Tourmaline Oil, serving as first point of contact for four business units and co-leading enterprise dataset strategy across all data teams.</p>
       <div class="about-meta">
         <div>
-          <div class="meta-label">Education</div>
+          <h3 class="meta-label">Education</h3>
           <div class="meta-strong">BASc, Electrical Engineering</div>
-          <div class="meta-sub">University of British Columbia, 2025 · Software Engineering specialization</div>
+          <div class="meta-sub">University of British Columbia, 2025<br>Software Engineering specialization</div>
         </div>
         <div>
-          <div class="meta-label">Credentials</div>
+          <h3 class="meta-label">Credentials</h3>
           <div class="meta-sub">Engineer-in-Training (EIT), APEGA<br>H2S Alive Certification<br>Member, Calgary Women in Energy</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="skills" class="section reveal">
-  <div class="wrap two-col">
-    <div class="col-label">
-      <div class="section-tag">02 / Skills</div>
-      <div class="tag-line"></div>
-    </div>
-    <div class="col-content skill-groups">
-      <div class="skill-group">
-        <div class="meta-label">BI &amp; reporting</div>
-        <div class="tag-row">
-          <span class="pill">Power BI</span><span class="pill">DAX Studio</span><span class="pill">Excel</span><span class="pill">Power Platform</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="meta-label">Data modeling &amp; warehousing</div>
-        <div class="tag-row">
-          <span class="pill">Semantic modeling</span><span class="pill">Microsoft Fabric</span><span class="pill">Databricks</span><span class="pill">Snowflake</span><span class="pill">SSMS</span><span class="pill">Denodo</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="meta-label">Languages</div>
-        <div class="tag-row">
-          <span class="pill">DAX</span><span class="pill">SQL</span><span class="pill">Power Query M</span><span class="pill">Python</span><span class="pill">C</span><span class="pill">C++</span><span class="pill">Java</span><span class="pill">Verilog</span><span class="pill">VHDL</span><span class="pill">ARM Assembly</span><span class="pill">8051</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="meta-label">Platforms &amp; tooling</div>
-        <div class="tag-row">
-          <span class="pill">Azure DevOps</span><span class="pill">Jira</span><span class="pill">VS Code</span><span class="pill">SharePoint</span><span class="pill">Frostbite</span>
-        </div>
-      </div>
+    <div class="about-photo">
+      <img src="mikia.jpg" alt="Mikia Whitehead">
     </div>
   </div>
 </section>
 
-<section id="projects" class="section reveal">
+<!-- ===== CONTACT TILE (replaces philosophy) ===== -->
+<section class="section">
   <div class="wrap">
-    <div class="section-tag">03 / Projects</div>
-    <div class="tag-line"></div>
+    <div class="contact-tile">
+      <div class="contact-text">
+        <h2>Let's connect</h2>
+        <p>Open to Data Analyst, BI Developer, and Analytics Engineer roles. Reach out directly; I'll reply within a day.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:mikiawhitehead@gmail.com" class="btn btn-accent">mikiawhitehead@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mikiawhitehead/" target="_blank" rel="noopener" class="btn btn-ghost-dark">LinkedIn</a>
+        <a href="tel:+14038279530" class="btn btn-ghost-dark">+1 (403) 827-9530</a>
+        <a href="resume.pdf" download="MikiaWhiteheadResume.pdf" class="btn btn-ghost-dark">Download resume ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3 class="skill-label">BI &amp; Reporting</h3>
+        <div class="tag-row"><span class="pill">Power BI</span><span class="pill">DAX Studio</span><span class="pill">Excel</span><span class="pill">Power Platform</span></div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-label">Data Modeling &amp; Warehousing</h3>
+        <div class="tag-row"><span class="pill">Semantic modeling</span><span class="pill">Microsoft Fabric</span><span class="pill">Databricks</span><span class="pill">Snowflake</span><span class="pill">SSMS</span><span class="pill">Denodo</span></div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-label">Languages</h3>
+        <div class="tag-row"><span class="pill">DAX</span><span class="pill">SQL</span><span class="pill">Power Query M</span><span class="pill">Python</span><span class="pill">C</span><span class="pill">C++</span><span class="pill">Java</span><span class="pill">Verilog</span><span class="pill">VHDL</span><span class="pill">ARM Assembly</span><span class="pill">8051</span></div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-label">Platforms &amp; Tooling</h3>
+        <div class="tag-row"><span class="pill">Azure DevOps</span><span class="pill">Jira</span><span class="pill">VS Code</span><span class="pill">SharePoint</span><span class="pill">Frostbite</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+  <div class="wrap">
     <div class="projects-head">
       <h2>Selected work</h2>
-      <div class="hint">Filter by technology · click a card to expand</div>
+      <p class="hint">Filter by technology · click to expand</p>
     </div>
     <div class="filter-row" id="filterRow">
       <button class="filter-btn active" data-filter="All">All</button>
@@ -139,261 +167,111 @@
       <button class="filter-btn" data-filter="Next.js">Next.js</button>
       <button class="filter-btn" data-filter="Firebase">Firebase</button>
     </div>
-
     <div class="project-list" id="projectList">
-
       <article class="project-card" data-tags="Power BI,DAX,Power Query M">
-        <div class="project-head">
-          <div class="project-main">
-            <div class="project-org">Tourmaline Oil Corp.</div>
-            <h3>AI-assisted Power BI documentation workflow</h3>
-            <p class="project-context">Dataset documentation was manual and slow enough that models routinely shipped undocumented, leaving definitions and lineage in people's heads.</p>
-          </div>
-          <div class="toggle-label">+ Detail</div>
-        </div>
-        <div class="project-detail">
-          <div class="detail-grid">
-            <div>
-              <div class="meta-label">What I built</div>
-              <ul>
-                <li>Built a documentation workflow using Claude integrated directly with Power BI project files</li>
-                <li>Generated structured documentation from the model layer rather than maintaining it by hand alongside it</li>
-              </ul>
-            </div>
-            <div>
-              <div class="meta-label">Outcome</div>
-              <ul><li>Cut dataset documentation time from at least 5 hours to under 30 minutes</li></ul>
-              <div class="meta-label">Stack</div>
-              <div class="tag-row"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query M</span><span class="chip">Claude</span></div>
-            </div>
-          </div>
-        </div>
+        <div class="project-head"><div class="project-main"><div class="project-org">Tourmaline Oil Corp.</div><h3>AI-assisted Power BI documentation workflow</h3><p class="project-context">Dataset documentation was manual and slow enough that models routinely shipped undocumented, leaving definitions and lineage in people's heads.</p></div><div class="toggle-label">+ Detail</div></div>
+        <div class="project-detail"><div class="detail-grid"><div><h4 class="meta-label">What I built</h4><ul><li>Built a documentation workflow using Claude integrated directly with Power BI project files</li><li>Generated structured documentation from the model layer rather than maintaining it by hand</li></ul></div><div><h4 class="meta-label">Outcome</h4><ul><li>Cut dataset documentation time from 5+ hours to under 30 minutes</li></ul><h4 class="meta-label">Stack</h4><div class="tag-row"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query M</span><span class="chip">Claude</span></div></div></div></div>
       </article>
-
       <article class="project-card" data-tags="Power BI,Microsoft Fabric,SQL,DAX,Databricks">
-        <div class="project-head">
-          <div class="project-main">
-            <div class="project-org">Tourmaline Oil Corp.</div>
-            <h3>Enterprise dataset strategy &amp; semantic model standards</h3>
-            <p class="project-context">Multiple data teams were building datasets against different source rules, so the same metric could be modelled and owned several different ways.</p>
-          </div>
-          <div class="toggle-label">+ Detail</div>
-        </div>
-        <div class="project-detail">
-          <div class="detail-grid">
-            <div>
-              <div class="meta-label">What I built</div>
-              <ul>
-                <li>Co-led development of an enterprise dataset strategy standardizing data source rules and semantic model design across all data teams</li>
-                <li>Delivered standardized datasets and analytics solutions as first point of contact for 4 business units</li>
-              </ul>
-            </div>
-            <div>
-              <div class="meta-label">Outcome</div>
-              <ul>
-                <li>Reduced design time and ownership ambiguity across data teams</li>
-                <li>Improved reporting accuracy and finance tracking; decreased refresh times by 90%</li>
-              </ul>
-              <div class="meta-label">Stack</div>
-              <div class="tag-row"><span class="chip">Power BI</span><span class="chip">Microsoft Fabric</span><span class="chip">SQL</span><span class="chip">DAX</span><span class="chip">SSMS</span><span class="chip">Databricks</span></div>
-            </div>
-          </div>
-        </div>
+        <div class="project-head"><div class="project-main"><div class="project-org">Tourmaline Oil Corp.</div><h3>Enterprise dataset strategy &amp; semantic model standards</h3><p class="project-context">Multiple data teams were building datasets against different source rules, so the same metric could be modelled and owned several different ways.</p></div><div class="toggle-label">+ Detail</div></div>
+        <div class="project-detail"><div class="detail-grid"><div><h4 class="meta-label">What I built</h4><ul><li>Co-led an enterprise dataset strategy standardizing source rules and semantic model design across all data teams</li><li>Delivered standardized datasets and analytics solutions as first point of contact for 4 business units</li></ul></div><div><h4 class="meta-label">Outcome</h4><ul><li>Reduced design time and ownership ambiguity across data teams</li><li>Improved reporting accuracy and finance tracking; decreased refresh times by 90%</li></ul><h4 class="meta-label">Stack</h4><div class="tag-row"><span class="chip">Power BI</span><span class="chip">Microsoft Fabric</span><span class="chip">SQL</span><span class="chip">DAX</span><span class="chip">SSMS</span><span class="chip">Databricks</span></div></div></div></div>
       </article>
-
       <article class="project-card" data-tags="Power Platform,Power BI">
-        <div class="project-head">
-          <div class="project-main">
-            <div class="project-org">Tourmaline Oil Corp.</div>
-            <h3>Power Platform governance model &amp; report catalog</h3>
-            <p class="project-context">Ownership of Power Platform and Power BI assets was split ambiguously between the business and ITS, creating decision bottlenecks and duplicated reports.</p>
-          </div>
-          <div class="toggle-label">+ Detail</div>
-        </div>
-        <div class="project-detail">
-          <div class="detail-grid">
-            <div>
-              <div class="meta-label">What I built</div>
-              <ul>
-                <li>Designed a cross-functional Power Platform governance model and RACI framework clarifying ownership across the business and ITS</li>
-                <li>Built a SharePoint site centralizing ownership, developer, data definition, and usage information for all Power BI reports</li>
-                <li>Founded and hosted recurring working sessions for 40+ members across ITS Data Architecture and Data Analysis leadership</li>
-              </ul>
-            </div>
-            <div>
-              <div class="meta-label">Outcome</div>
-              <ul>
-                <li>Reduced decision bottlenecks and established implemented design standards</li>
-                <li>Improved data literacy and report discoverability org-wide</li>
-                <li>Resolved friction between teams and established a joint decision process that reduced siloed work</li>
-              </ul>
-              <div class="meta-label">Stack</div>
-              <div class="tag-row"><span class="chip">Power Platform</span><span class="chip">Power BI</span><span class="chip">SharePoint</span></div>
-            </div>
-          </div>
-        </div>
+        <div class="project-head"><div class="project-main"><div class="project-org">Tourmaline Oil Corp.</div><h3>Power Platform governance model &amp; report catalog</h3><p class="project-context">Ownership of Power Platform and Power BI assets was split ambiguously between the business and ITS, creating decision bottlenecks and duplicated reports.</p></div><div class="toggle-label">+ Detail</div></div>
+        <div class="project-detail"><div class="detail-grid"><div><h4 class="meta-label">What I built</h4><ul><li>Designed a cross-functional governance model and RACI framework clarifying ownership across the business and ITS</li><li>Built a SharePoint site centralizing ownership, developer, data definition, and usage information for all reports</li><li>Founded recurring working sessions for 40+ members across ITS Data Architecture and Data Analysis leadership</li></ul></div><div><h4 class="meta-label">Outcome</h4><ul><li>Reduced decision bottlenecks and established design standards</li><li>Improved data literacy and report discoverability org-wide</li><li>Established a joint decision process that reduced siloed work</li></ul><h4 class="meta-label">Stack</h4><div class="tag-row"><span class="chip">Power Platform</span><span class="chip">Power BI</span><span class="chip">SharePoint</span></div></div></div></div>
       </article>
-
       <article class="project-card" data-tags="">
-        <div class="project-head">
-          <div class="project-main">
-            <div class="project-org">Veren Inc. (formerly Crescent Point Energy)</div>
-            <h3>KPI monitoring application on real-time pipelines</h3>
-            <p class="project-context">Pipeline integrity failures were being reviewed after the fact, with no continuous view of failure rates across assets.</p>
-          </div>
-          <div class="toggle-label">+ Detail</div>
-        </div>
-        <div class="project-detail">
-          <div class="detail-grid">
-            <div>
-              <div class="meta-label">What I built</div>
-              <ul>
-                <li>Designed and implemented a KPI monitoring application leveraging real-time data pipelines to track failure rates</li>
-                <li>Co-developed a machine learning model assessing forecast accuracy from historical production data</li>
-              </ul>
-            </div>
-            <div>
-              <div class="meta-label">Outcome</div>
-              <ul>
-                <li>Enabled predictive insights that reduced pipeline integrity failures by 30% over two years</li>
-                <li>Improved predictive modeling and decision-making on production forecasts</li>
-              </ul>
-              <div class="meta-label">Stack</div>
-              <div class="tag-row"><span class="chip">Real-time data pipelines</span><span class="chip">Machine learning</span></div>
-            </div>
-          </div>
-        </div>
+        <div class="project-head"><div class="project-main"><div class="project-org">Veren Inc.</div><h3>KPI monitoring application on real-time pipelines</h3><p class="project-context">Pipeline integrity failures were being reviewed after the fact, with no continuous view of failure rates across assets.</p></div><div class="toggle-label">+ Detail</div></div>
+        <div class="project-detail"><div class="detail-grid"><div><h4 class="meta-label">What I built</h4><ul><li>Designed and implemented a KPI monitoring application leveraging real-time data pipelines to track failure rates</li><li>Co-developed a machine learning model assessing forecast accuracy from historical production data</li></ul></div><div><h4 class="meta-label">Outcome</h4><ul><li>Reduced pipeline integrity failures by 30% over two years</li><li>Improved predictive modeling and decision-making on production forecasts</li></ul><h4 class="meta-label">Stack</h4><div class="tag-row"><span class="chip">Real-time pipelines</span><span class="chip">Machine learning</span></div></div></div></div>
       </article>
-
-      <article class="project-card" data-tags="React,Next.js,Firebase">
-        <div class="project-head">
-          <div class="project-main">
-            <div class="project-org">New Venture Design Capstone, UBC</div>
-            <h3>UNIFY — Canadian university admissions platform</h3>
-            <p class="project-context">Canadian university admissions data is scattered across institutions, leaving high school students without a single place to compare programs or track applications.</p>
-          </div>
-          <div class="toggle-label">+ Detail</div>
-        </div>
-        <div class="project-detail">
-          <div class="detail-grid">
-            <div>
-              <div class="meta-label">What I built</div>
-              <ul>
-                <li>Co-founded and led a team of 6 building a full-stack web platform for consolidated admissions data, personalized program matching, and application tracking</li>
-                <li>Led UI/UX design across three design iterations in Figma, translating feedback from 10+ students into a refined interface</li>
-                <li>Co-developed business strategy including revenue model, IP strategy, and freedom-to-operate analysis</li>
-              </ul>
-            </div>
-            <div>
-              <div class="meta-label">Outcome</div>
-              <ul>
-                <li>93% of surveyed users willing to recommend the platform; 100% reported at least one valuable feature</li>
-                <li>Validated product-market fit through user interviews, surveys, and live demo events</li>
-              </ul>
-              <div class="meta-label">Stack</div>
-              <div class="tag-row"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Firebase</span><span class="chip">Vercel</span><span class="chip">Figma</span></div>
-            </div>
-          </div>
-        </div>
+      <article class="project-card featured" data-tags="React,Next.js,Firebase">
+        <div class="project-head"><div class="project-main"><div class="project-org">UBC New Venture Design Capstone <span class="founder-badge">Co-founder</span></div><h3>UNIFY — Canadian university admissions platform</h3><p class="project-context">Canadian university admissions data is scattered across institutions, leaving students without a single place to compare programs or track applications.</p></div><div class="toggle-label">+ Detail</div></div>
+        <div class="project-detail"><div class="detail-grid"><div><h4 class="meta-label">What I built</h4><ul><li>Co-founded and led a team of 6 building a full-stack web platform for consolidated admissions data, personalized matching, and application tracking</li><li>Led UI/UX design across three iterations in Figma, translating feedback from 10+ students</li><li>Co-developed business strategy including revenue model, IP strategy, and freedom-to-operate analysis</li></ul></div><div><h4 class="meta-label">Outcome</h4><ul><li>93% of surveyed users willing to recommend; 100% reported at least one valuable feature</li><li>Validated product-market fit through user interviews, surveys, and live demos</li></ul><h4 class="meta-label">Stack</h4><div class="tag-row"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Firebase</span><span class="chip">Vercel</span><span class="chip">Figma</span></div></div></div></div>
       </article>
-
     </div>
-    <div class="empty-state" id="emptyState">No projects tagged with that technology.</div>
+    <div class="empty-state" id="emptyState">No projects match that filter.</div>
   </div>
 </section>
 
-<section class="section reveal">
+<!-- ===== BEFORE & AFTER ===== -->
+<section class="section">
   <div class="wrap">
     <div class="metrics-panel">
       <div class="metrics-head">
-        <div>
-          <div class="section-tag light">Interactive · measured impact</div>
-          <h2>Before and after</h2>
-        </div>
-        <div class="mode-toggle">
-          <button class="mode-btn active" data-mode="before">Before</button>
-          <button class="mode-btn" data-mode="after">After</button>
-        </div>
+        <div><p class="metrics-tag">Measured impact</p><h2>Before and after</h2></div>
+        <div class="mode-toggle"><button class="mode-btn active" data-mode="before">Before</button><button class="mode-btn" data-mode="after">After</button></div>
       </div>
       <p class="metrics-sub">Three changes I shipped, shown at their reported before and after values.</p>
       <div class="metric-list">
-        <div class="metric" data-before-width="100" data-after-width="10" data-before-text="baseline" data-after-text="−90%">
-          <div class="metric-row"><span>Dataset refresh time</span><span class="metric-val"></span></div>
-          <div class="metric-track"><div class="metric-fill"></div></div>
-          <div class="metric-source">Tourmaline Oil Corp. — standardized datasets across 4 business units</div>
-        </div>
-        <div class="metric" data-before-width="100" data-after-width="10" data-before-text="5 h+" data-after-text="&lt; 30 min">
-          <div class="metric-row"><span>Dataset documentation time</span><span class="metric-val"></span></div>
-          <div class="metric-track"><div class="metric-fill"></div></div>
-          <div class="metric-source">Tourmaline Oil Corp. — AI-assisted documentation workflow</div>
-        </div>
-        <div class="metric" data-before-width="100" data-after-width="70" data-before-text="baseline" data-after-text="−30%">
-          <div class="metric-row"><span>Pipeline integrity failures</span><span class="metric-val"></span></div>
-          <div class="metric-track"><div class="metric-fill"></div></div>
-          <div class="metric-source">Veren Inc. — KPI monitoring on real-time pipelines</div>
-        </div>
+        <div class="metric" data-before-width="100" data-after-width="10" data-before-text="baseline" data-after-text="−90%"><div class="metric-row"><span>Dataset refresh time</span><span class="metric-val"></span></div><div class="metric-track"><div class="metric-fill"></div></div><div class="metric-source">Tourmaline Oil — standardized datasets across 4 business units</div></div>
+        <div class="metric" data-before-width="100" data-after-width="10" data-before-text="5 h+" data-after-text="< 30 min"><div class="metric-row"><span>Dataset documentation time</span><span class="metric-val"></span></div><div class="metric-track"><div class="metric-fill"></div></div><div class="metric-source">Tourmaline Oil — AI-assisted documentation workflow</div></div>
+        <div class="metric" data-before-width="100" data-after-width="70" data-before-text="baseline" data-after-text="−30%"><div class="metric-row"><span>Pipeline integrity failures</span><span class="metric-val"></span></div><div class="metric-track"><div class="metric-fill"></div></div><div class="metric-source">Veren Inc. — KPI monitoring on real-time pipelines</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="experience" class="section reveal">
-  <div class="wrap two-col">
-    <div class="col-label">
-      <div class="section-tag">04 / Experience</div>
-      <div class="tag-line"></div>
-    </div>
-    <div class="col-content">
-
-      <div class="role">
-        <div class="role-head"><h3>Data Analyst — Functional Data Governance &amp; BI Lead</h3><div class="role-dates">May 2024 — Present</div></div>
-        <div class="role-org">Tourmaline Oil Corp., Calgary, AB</div>
-        <p>First point of contact for 4 business units on standardized datasets and analytics solutions. Co-led enterprise dataset strategy and Power Platform governance, built the org-wide Power BI report catalog, and mentored data analyst interns on modeling standards.</p>
-      </div>
-
-      <div class="role">
-        <div class="role-head"><h3>Digital Engineering Analyst</h3><div class="role-dates">Sep 2024 — Apr 2025</div></div>
-        <div class="role-org">Veren Inc. (formerly Crescent Point Energy), Calgary, AB</div>
-        <p>Built a KPI monitoring application on real-time data pipelines and co-developed a forecast-accuracy ML model, while leading training for junior team members on data and database practices.</p>
-      </div>
-
-      <div class="role">
-        <div class="role-head"><h3>Digital Engineering Intern</h3><div class="role-dates">May 2023 — Aug 2024</div></div>
-        <div class="role-org">Veren Inc. (formerly Crescent Point Energy), Calgary, AB</div>
-        <p>Led a company-wide initiative to standardize Power BI data models and reports, and developed data solutions in Microsoft Fabric using pipelines, data lakes, and SQL Servers. One of 35 interns to receive a full-time return offer.</p>
-      </div>
-
-      <div class="role">
-        <div class="role-head"><h3>Engineering Co-op Student, Operational Excellence</h3><div class="role-dates">May 2022 — Aug 2022</div></div>
-        <div class="role-org">EVRAZ North America, Red Deer, AB</div>
-        <p>Analyzed pipeline manufacturing processes to identify field bottlenecks, and proposed a fix to a casing pipe production constriction projected to cut cycle time by 55%.</p>
-      </div>
-
-      <div class="role">
-        <div class="role-head"><h3>Development Support Engineering Intern</h3><div class="role-dates">May 2021 — Aug 2021</div></div>
-        <div class="role-org">Electronic Arts (EA Sports), Vancouver, BC</div>
-        <p>Tested 1,000+ kits across eight console environments with the highest bug detection rate (20%) among peers, contributing to QA process improvements and new QA strategies.</p>
-      </div>
-
-      <div class="also-row">
-        <div class="meta-label">Also</div>
-        <div>Youth Coach, Youthfully · Math Tutor Team Lead, Calgary Public Library · President, World Vision UBC · Operations &amp; Logistics Lead, Engineers Without Borders UBC</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section">
   <div class="wrap">
-    <h2>Open to Data Analyst,<br>BI Developer &amp; Analytics<br>Engineer roles.</h2>
-    <div class="hero-cta">
-      <a href="mailto:mikiawhitehead@gmail.com" class="btn btn-accent">mikiawhitehead@gmail.com</a>
-      <a href="https://www.linkedin.com/in/mikiawhitehead/" target="_blank" rel="noopener" class="btn btn-ghost">linkedin.com/in/mikiawhitehead</a>
+    <h2>Experience</h2>
+    <div class="roles">
+      <div class="role"><div class="role-head"><h3>Data Analyst — Functional Data Governance &amp; BI Lead</h3><span class="role-dates">May 2024 — Present</span></div><div class="role-org">Tourmaline Oil Corp., Calgary</div><p>First point of contact for 4 business units on standardized datasets and analytics solutions. Co-led enterprise dataset strategy and Power Platform governance, built the org-wide Power BI report catalog, and mentored data analyst interns on modeling standards.</p></div>
+      <div class="role"><div class="role-head"><h3>Digital Engineering Analyst</h3><span class="role-dates">Sep 2024 — Apr 2025</span></div><div class="role-org">Veren Inc. (formerly Crescent Point Energy), Calgary</div><p>Built a KPI monitoring application on real-time data pipelines and co-developed a forecast-accuracy ML model, while leading training for junior team members on data and database practices.</p></div>
+      <div class="role"><div class="role-head"><h3>Digital Engineering Intern</h3><span class="role-dates">May 2023 — Aug 2024</span></div><div class="role-org">Veren Inc. (formerly Crescent Point Energy), Calgary</div><p>Led a company-wide initiative to standardize Power BI data models and reports, and developed data solutions in Microsoft Fabric. One of 35 interns to receive a full-time return offer.</p></div>
+      <div class="role"><div class="role-head"><h3>Engineering Co-op, Operational Excellence</h3><span class="role-dates">May — Aug 2022</span></div><div class="role-org">EVRAZ North America, Red Deer</div><p>Analyzed pipeline manufacturing processes to identify field bottlenecks, and proposed a fix projected to cut casing pipe production cycle time by 55%.</p></div>
+      <div class="role"><div class="role-head"><h3>Development Support Engineering Intern</h3><span class="role-dates">May — Aug 2021</span></div><div class="role-org">Electronic Arts (EA Sports), Vancouver</div><p>Tested 1,000+ kits across eight console environments with the highest bug detection rate (20%) among peers.</p></div>
     </div>
-    <div class="footer-bottom">
-      <div>Mikia Whitehead — Calgary, AB</div>
-      <div>+1 (403) 827-9530</div>
+  </div>
+</section>
+
+<!-- ===== BEYOND THE NUMBERS ===== -->
+<section id="beyond" class="section">
+  <div class="wrap">
+    <h2>Beyond the numbers</h2>
+    <p class="section-intro">Building systems is one part of the job. Building people is the other.</p>
+    <div class="beyond-grid">
+      <div class="beyond-card"><h3>Youth Coach</h3><div class="beyond-org">Youthfully</div><p>Online coaching for high school students on passion projects, university admissions, and landing their first internships.</p></div>
+      <div class="beyond-card"><h3>Intern &amp; Analyst Mentor</h3><div class="beyond-org">Tourmaline Oil Corp.</div><p>Mentoring data analyst interns on semantic modeling standards, DAX patterns, and professional development.</p></div>
+      <div class="beyond-card"><h3>President</h3><div class="beyond-org">World Vision UBC</div><p>Led campus chapter operations, advocacy campaigns, and a team of student volunteers.</p></div>
+      <div class="beyond-card"><h3>Operations &amp; Logistics Lead</h3><div class="beyond-org">Engineers Without Borders UBC</div><p>Managed logistics and event operations for the campus engineering development chapter.</p></div>
+      <div class="beyond-card"><h3>Math Tutor Team Lead</h3><div class="beyond-org">Calgary Public Library</div><p>Led a team of tutors providing free math support to community members.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card"><p>"Testimonial from a manager, colleague, or mentee."</p><div class="testimonial-attr">— Name, Role</div></div>
+      <div class="testimonial-card"><p>"Testimonial from a manager, colleague, or mentee."</p><div class="testimonial-attr">— Name, Role</div></div>
+    </div>
+    <p class="testimonial-note">References available on request.</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-left">
+      <h2>Built to last,<br>not just to ship.</h2>
+      <div class="footer-cta">
+        <a href="mailto:mikiawhitehead@gmail.com" class="btn btn-accent">Get in touch</a>
+        <a href="resume.pdf" download="MikiaWhiteheadResume.pdf" class="btn btn-ghost">Resume ↓</a>
+      </div>
+    </div>
+    <div class="footer-badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200" width="140" height="140">
+        <defs><path id="badge-circle" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+        <text class="badge-text"><textPath href="#badge-circle" startOffset="0">BUILT TO LAST &#x2022; NOT JUST TO SHIP &#x2022; BUILT TO LAST &#x2022; NOT JUST TO SHIP &#x2022;</textPath></text>
+      </svg>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>Mikia Whitehead — Calgary, AB</span>
+    <span>+1 (403) 827-9530</span>
   </div>
 </footer>
 
